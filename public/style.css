@@ -1,3 +1,4 @@
+/******************************* BASIC RESETS *********************************/
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -58,11 +59,15 @@ body {
   background-color: #8e8e8e;
 }
 
+/********************************** STYLING ***********************************/
+
 #root-wrapper {
   height: 100%;
   width: 100%;
   display: flex;
 }
+
+/********* sidebar styling ********/
 
 #sidebar-wrapper {
   width: 350px;
@@ -106,13 +111,15 @@ body {
   color: #fff;
 }
 
+/********* content styling ********/
+
 #content-wrapper {
   height: 100vh;
   padding: 40px;
 }
 
 #website-title {
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .section-title {
@@ -120,7 +127,7 @@ body {
 }
 
 .section {
-  margin: 60px 0px;
+  margin: 40px 0px;
 }
 
 .section-link {
