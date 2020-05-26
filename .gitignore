@@ -1,6 +1,7 @@
 .firebase
 .firebaserc
 firebase.json
+desktop.ini
 
 # Logs
 logs

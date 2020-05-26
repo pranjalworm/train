@@ -7,7 +7,7 @@ body {
   margin: 0px !important;
   padding: 0px !important;
   background: #112240;
-  font-family: "PT Serif", serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 * {
@@ -57,23 +57,76 @@ body {
   background-color: #8e8e8e;
 }
 
-.title {
-  font-family: "PT Sans", sans-serif;
-}
-
 #root-wrapper {
   height: 100%;
   width: 100%;
   display: flex;
 }
 
-#side-wrapper {
-  width: 20%;
-  height: 100%;
+#sidebar-wrapper {
+  width: 350px;
+  height: 100vh;
+  padding: 40px;
   background: #0c1930;
 }
 
+#sidebar-wrapper > div {
+  text-align: right;
+}
+
+#profile-pic-wrapper > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#about-me-wrapper > div {
+  margin-bottom: 10px;
+}
+
+#social-links-wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-link {
+  margin-bottom: 10px;
+}
+
+.social-link {
+  color: #fff;
+}
+
+#contact-info-wrapper {
+  margin-top: 40px;
+}
+
+#contact-info-wrapper a {
+  color: #fff;
+}
+
 #content-wrapper {
-  width: 70%;
-  height: 100%;
+  height: 100vh;
+  padding: 40px;
+}
+
+#website-title {
+  font-size: 36px;
+}
+
+.section-title {
+  font-size: 30px;
+}
+
+.section {
+  margin: 60px 0px;
+}
+
+.section-link {
+  font-size: 20px;
+  margin: 20px 0px;
+}
+
+.section-link > a {
+  color: #fff;
 }
