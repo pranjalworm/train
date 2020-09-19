@@ -123,19 +123,31 @@ body {
   font-size: 40px;
 }
 
-.section-title {
-  font-size: 30px;
+.sections-container {
+  margin: 40px 0px;
 }
 
-.section {
-  margin: 40px 0px;
+.section-title {
+  font-size: 30px;
 }
 
 .section-link {
   font-size: 20px;
   margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-link > a {
   color: #6d6d6d;
+}
+
+.section-description {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.code-link {
+  color: #c91c1c !important;
+  text-decoration: none !important;
 }
