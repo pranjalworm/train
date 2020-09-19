@@ -7,9 +7,9 @@ html {
 body {
   margin: 0px !important;
   padding: 0px !important;
-  background: #112240;
+  background: #fff;
   font-family: "PT Sans", sans-serif;
-  color: #fff;
+  color: #6d6d6d;
 }
 
 * {
@@ -73,7 +73,8 @@ body {
   width: 350px;
   height: 100vh;
   padding: 40px;
-  background: #0c1930;
+  background: #292929;
+  color: #ececec;
 }
 
 #sidebar-wrapper > div {
@@ -100,7 +101,7 @@ body {
 }
 
 .social-link {
-  color: #fff;
+  color: #ececec;
 }
 
 #contact-info-wrapper {
@@ -108,7 +109,7 @@ body {
 }
 
 #contact-info-wrapper a {
-  color: #fff;
+  color: #ececec;
 }
 
 /********* content styling ********/
@@ -136,5 +137,5 @@ body {
 }
 
 .section-link > a {
-  color: #fff;
+  color: #6d6d6d;
 }
