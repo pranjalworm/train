@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { metaData } from '../public/meta-data';
 
 export default function Home() {
   return (
@@ -9,6 +10,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Personal website of Pranjal Dubey." />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(metaData) }}
+        />
       </Head>
 
       {/* sidebar */}
