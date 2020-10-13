@@ -5,8 +5,10 @@
   "description": "Personal website of Pranjal Dubey",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start",
+    "fire": "npm run build && firebase deploy",
+    "test-flight": "npm run build && firebase serve"
   },
   "dependencies": {
     "next": "9.5.3",
