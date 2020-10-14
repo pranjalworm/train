@@ -1,33 +1,41 @@
 import Head from 'next/head';
-import { metaData } from '../public/meta-data';
+import { SEOData } from '../public/seo-data';
 
 export default function Home() {
+
+  const description = 'Pranjal Dubey is a programmer and part-time photographer based in Bangalore, India.';
+
   return (
     <div id="root-wrapper">
       <Head>
         <title>Pranjal Dubey</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Personal website of Pranjal Dubey." />
+        <meta name="description" content={description} />
+        <meta property="og:site_name" content="Pranjal Dubey" />
+        <meta property="og:title" content="Pranjal Dubey" />
+        <meta property="og:url" content="https://pranjaldubey.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content="https://pranjaldubey.com/images/pranjal.jpg" />
+        <meta property="og:image:alt" content="Pranjal Dubey's photograph" />
+        <script type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(SEOData.SchemaData) }} />
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(metaData) }}
-        />
       </Head>
 
       {/* sidebar */}
       <div id="sidebar-wrapper">
         <div id="profile-pic-wrapper">
-          <img src="/images/pranjal.jpg" alt="pranjal dubey's photograph" />
+          <img src="/images/pranjal.jpg" alt="Pranjal Dubey's photograph" />
         </div>
 
         <div id="about-me-wrapper">
           <div>I am a programmer.</div>
           <div>I like reading almost anything interesting I can get my hands on.</div>
-          <div>Big time into photography.</div>
-          <div>Pizza is life.</div>
-          <div>Based in Bangalore, India</div>
+          <div>I am big time into photography.</div>
+          <div>Pizza is life for me.</div>
+          <div>Bangalore, India</div>
         </div>
 
         <div id="social-links-wrapper">
