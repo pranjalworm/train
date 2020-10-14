@@ -64,6 +64,7 @@ body {
 #root-wrapper {
   height: 100%;
   width: 100%;
+  min-height: 720px;
   display: flex;
 }
 
@@ -71,7 +72,7 @@ body {
 
 #sidebar-wrapper {
   width: 350px;
-  height: 100vh;
+  height: 100%;
   padding: 40px;
   background: #292929;
   color: #ececec;
