@@ -121,7 +121,9 @@ body {
 }
 
 #website-title {
-  font-size: 40px;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: right;
 }
 
 .sections-container {
