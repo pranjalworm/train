@@ -4,14 +4,6 @@ html {
   font-size: 16px;
 }
 
-body {
-  margin: 0px !important;
-  padding: 0px !important;
-  background: #fff;
-  font-family: "PT Sans", sans-serif;
-  color: #6d6d6d;
-}
-
 * {
   padding: 0px;
   margin: 0px;
@@ -33,12 +25,6 @@ body {
 
 html,
 body {
-  max-width: 100vw !important;
-  min-width: 100vw !important;
-
-  max-height: 100vh !important;
-  min-height: 100vh !important;
-
   overflow-x: hidden !important;
 }
 
@@ -59,98 +45,10 @@ body {
   background-color: #8e8e8e;
 }
 
-/********************************** STYLING ***********************************/
+/********************************** TAILWIND **********************************/
 
-#root-wrapper {
-  height: 100%;
-  width: 100%;
-  display: flex;
-}
+@tailwind base;
 
-/********* sidebar styling ********/
+@tailwind components;
 
-#sidebar-wrapper {
-  width: 350px;
-  height: 100vh;
-  min-height: 720px;
-  padding: 40px;
-  background: #292929;
-  color: #ececec;
-}
-
-#sidebar-wrapper > div {
-  text-align: right;
-}
-
-#profile-pic-wrapper > img {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-#about-me-wrapper > div {
-  margin-bottom: 10px;
-}
-
-#social-links-wrapper {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-}
-
-.social-link {
-  margin-bottom: 10px;
-}
-
-.social-link {
-  color: #ececec;
-}
-
-#contact-info-wrapper {
-  margin-top: 40px;
-}
-
-#contact-info-wrapper a {
-  color: #ececec;
-}
-
-/********* content styling ********/
-
-#content-wrapper {
-  height: 100vh;
-  padding: 40px;
-}
-
-#website-title {
-  font-size: 28px;
-  margin-bottom: 20px;
-  text-align: right;
-}
-
-.sections-container {
-  margin: 0 0 40px 0;
-}
-
-.section-title {
-  font-size: 30px;
-}
-
-.section-link {
-  font-size: 20px;
-  margin: 20px 0px;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-link > a {
-  color: #6d6d6d;
-}
-
-.section-description {
-  margin: 10px 0;
-  font-size: 16px;
-}
-
-.code-link {
-  color: #c91c1c !important;
-  text-decoration: none !important;
-}
+@tailwind utilities;

@@ -20,7 +20,7 @@ export const Meta = () => {
       <meta property="og:image:alt" content="Pranjal Dubey's photograph" />
       <script type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(SEOData.SchemaData) }} />
-      <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap" rel="stylesheet" />
     </Head>
   )
 }
