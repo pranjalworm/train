@@ -3,7 +3,7 @@ import React from 'react';
 export default function SideMenu() {
 
   return (
-    <div className="w-1/5 min-w-sidemenu h-screen min-h-sidemenu p-8 bg-primary text-white text-right">
+    <div className="w-1/5 min-w-sidemenu h-screen min-h-sidemenu p-8 bg-sidemenu text-white text-right">
       <h1 className="mb-8 text-3xl font-title">
         Pranjal Dubey
       </h1>

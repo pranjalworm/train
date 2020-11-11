@@ -11,13 +11,20 @@ module.exports = {
       body: ['Roboto', 'sans-serif'],
     },
     minWidth: {
-      'sidemenu': '350px'
+      'sidemenu': '350px',
+      'card': '250px'
+    },
+    maxWidth: {
+      'card': '300px'
     },
     minHeight: {
-      'sidemenu': '900px'
+      'sidemenu': '900px',
+      'card': '300px'
     },
     backgroundColor: theme => ({
-      'primary': '#292929'
+      'sidemenu': '#292929',
+      'content': '#fafbfc',
+      'white': '#fff'
     }),
     textColor: {
       'primary': '#6d6d6d',
