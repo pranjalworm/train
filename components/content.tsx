@@ -1,41 +1,53 @@
 import React from 'react';
-import { Cards } from '../data/content-data';
-import { CardIds } from '../shared/enums';
+import { CardService, CardType } from '../services/card.service';
+import { ProjectCardIds } from '../shared/enums';
 import { Card } from './card';
 
-const getCards = () => {
+const getCards = (cardType: CardType) => {
 
+  let cardData;
   const cards = [];
 
-  for (const key in Cards) {
+  switch (cardType) {
+    case CardType.Project:
+      cardData = CardService.getCards(CardType.Project);
+      break;
 
-    const cardConfig = Cards[key];
+    case CardType.Blog:
+      cardData = CardService.getCards(CardType.Blog);
+      break;
+  }
+
+  for (const key in cardData) {
+
+    const config = cardData[key];
+
     const card = <Card
-      key={cardConfig.id}
-      id={cardConfig.id}
-      imageUrl={cardConfig.imageUrl}
-      imageAlt={cardConfig.imageUrl}
-      title={cardConfig.title}
-      description={cardConfig.description}
+      key={config.id}
+      id={config.id}
+      imageUrl={config.imageUrl}
+      imageAlt={config.imageUrl}
+      title={config.title}
+      description={config.description}
       clickCallback={cardClickHandler} />
 
     cards.push(card);
   }
 
   return cards;
-
 };
+
 
 const cardClickHandler = (id: string) => {
 
   let url: string;
 
   switch (id) {
-    case CardIds.PranjalDubeyPhotography:
+    case ProjectCardIds.PranjalDubeyPhotography:
       url = 'https://pranjaldubey.photography';
       break;
 
-    case CardIds.CssFilterGenerator:
+    case ProjectCardIds.CssFilterGenerator:
       url = 'https://pranjalworm.github.io/css-filter-generator/';
       break;
 
@@ -54,7 +66,13 @@ export default function Content() {
       <div className="text-3xl font-title mb-8">Projects</div>
 
       <div className="flex flex-row">
-        {getCards()}
+        {getCards(CardType.Project)}
+      </div>
+
+      <div className="text-3xl font-title mb-8 mt-4">Blogs</div>
+
+      <div className="flex flex-row">
+        {getCards(CardType.Blog)}
       </div>
 
     </div>
